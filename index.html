@@ -2,34 +2,205 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Celluli Killer - Professionelle LPG Endermologie-Systeme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celluli Killer — Professionelle LPG Endermologie Systeme</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; }
-        h1 { color: #0056b3; }
-        .box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .price { font-size: 24px; font-weight: bold; color: #28a745; }
-        .footer { margin-top: 30px; font-size: 12px; color: #666; border-top: 1px solid #ddd; padding-top: 10px; }
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --success: #16a34a;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+        .product-card {
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            background: #fafaf9;
+        }
+        .product-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .features-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        .features-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+        }
+        .features-list li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .price-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .price-label {
+            font-size: 1.1rem;
+            color: #166534;
+            font-weight: 500;
+        }
+        .price-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--success);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .gallery-placeholder {
+            background: #e2e8f0;
+            height: 200px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 10px;
+            border: 2px dashed #cbd5e1;
+        }
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.2s;
+        }
+        .cta-button:hover {
+            background: #1d4ed8;
+        }
+        .legal {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        .legal p {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Celluli Killer — Professionelle LPG Systeme</h1>
-        <p>Wartung, Service und Vertrieb von professionellen LPG Endermologie-Systemen für Ihr Studio in Deutschland.</p>
-        
-        <h2>Aktuelles Angebot:</h2>
-        <p><strong>LPG Cellu M6 Alliance (Full Version)</strong><br>
-        Für Gesicht und Körper, mit original Alliance 80 Handstücken und Touchscreen. Perfekter technischer Zustand.</p>
-        
-        <p class="price">Preis: 8.700 € Netto</p>
-        <p><em>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung). Gewerblicher Verkauf unter Ausschluss der Gewährleistung.</em></p>
-        
-        <h3>Kontakt & Standort:</h3>
-        <p>Standort: Gernsheim am Rhein<br>
-        E-Mail: <a href="mailto:cellulitekiller.eu@gmail.com">cellulitekiller.eu@gmail.com</a></p>
+
+    <div class="container">
+        <div class="header">
+            <h1>Celluli Killer</h1>
+            <p>Professionelle LPG Endermologie Systeme & Service</p>
+        </div>
+
+        <div class="content">
+            <span class="badge">Verfügbares Angebot</span>
+            
+            <div class="product-card">
+                <h2 class="product-title">LPG Cellu M6 Alliance (Full Version)</h2>
+                <p>Das High-End-System für Gesichts- und Körper traitements. Perfekter technischer und optischer Zustand, sofort einsatzbereit für Ihr Studio.</p>
+                
+                <ul class="features-list">
+                    <li>Original Alliance 80 Behandlungskopf (Tratment Head)</li>
+                    <li>Integrierter Touchscreen in makellosem Zustand</li>
+                    <li>Umfassende Wartung und Prüfung durchgeführt</li>
+                    <li>Ideal für professionelle Kosmetikstudios und Wellness-Spas</li>
+                </ul>
+
+                <!-- Сюда в будущем можно будет добавить реальные фото, заменив блоки ниже -->
+                <div class="gallery">
+                    <div class="gallery-placeholder">Foto 1: Gesamtansicht Gerät</div>
+                    <div class="gallery-placeholder">Foto 2: Alliance 80 Handstück</div>
+                    <div class="gallery-placeholder">Foto 3: Touchscreen / Display</div>
+                </div>
+
+                <div class="price-box">
+                    <span class="price-label">Preis (Netto):</span>
+                    <span class="price-value">8.700 €</span>
+                </div>
+
+                <a href="mailto:cellulitekiller.eu@gmail.com?subject=Inquiry:%20LPG%20Cellu%20M6%20Alliance" class="cta-button">Per E-Mail anfragen / Termin vereinbaren</a>
+            </div>
+
+            <div class="legal">
+                <p><strong>Standort:</strong> 64579 Gernsheim am Rhein, Deutschland</p>
+                <p><strong>Kontakt:</strong> <a href="mailto:cellulitekiller.eu@gmail.com" style="color: var(--accent); text-decoration: none;">cellulitekiller.eu@gmail.com</a></p>
+                <p style="margin-top: 15px;"><em>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung). Gewerblicher Verkauf unter Ausschluss der Gewährleistung. Impressum Verantwortlicher: Arkadi Gerjoy, Sudetenstraße 9a, 64579 Gernsheim.</em></p>
+            </div>
+        </div>
     </div>
-    
-    <div class="footer">
-        <p>Impressum: Arkady Gerjoy, Sudetenstraße 9a, 64579 Gernsheim.</p>
-    </div>
+
 </body>
 </html>
